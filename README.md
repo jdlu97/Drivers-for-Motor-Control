@@ -1,5 +1,5 @@
-# Lab-1
- These files contain driver classes encapsulating the functionality of an encoder and a motor. A Pittman/Ametek 24V PM DC brush motor with a quadrature incremental encoder was used as well as an L6306 motor driver shield. The Nucleo STM32L476RG was the microcontroller unit of choice.
+# Drivers for Motor Control
+ Source code and documentation of driver classes encapsulating the functionality of an encoder and a motor. A Pittman/Ametek 24V PM DC brush motor with a quadrature incremental encoder was used as well as an L6306 motor driver shield. The Nucleo STM32L476RG was the microcontroller unit of choice.
  
  ## Encoder Reading
  
@@ -22,5 +22,7 @@
  The encoder class was tested by both turning the motor by hand and running the motor under power and printing the encoder position on the REPL. The code returned reasonable results when the motor was moved manually and by power. The encoder pulse rate was check with an oscilloscope and the count changed at the right number of counts per second.
  
  The motor driver class was tested by sending it a range of duty cycles, both positive and negative, and checking that the motor moved both ways. “Edge cases” such as the maximum and minimum possible duty cycles for proper operation was accounted for.
+ 
+ 
  
  *The source code of this repository and its documentation were originally developed for Lab 1 of the Mechatronics course at California Polytechnic State University.*
