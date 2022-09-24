@@ -1,4 +1,4 @@
-'''!    @file       encoder_liberty_luna_monroe.py
+'''!    @file       encoder_driver.py
         @brief      A driver for working with a quadrature incremental encoder.
         @details    Encapsulates functionality of encoder attached to the motor.
                     This class sets up pins to control the encoder and methods
@@ -6,8 +6,8 @@
                     in units of "ticks". Position reading is based on an 
                     algorithm that accounts for overflow and underflow.
  
-        @author     Cade Liberty
         @author     Juan Luna
+        @author     Cade Liberty
         @author     Marcus Monroe
 
         @date       January 26, 2022

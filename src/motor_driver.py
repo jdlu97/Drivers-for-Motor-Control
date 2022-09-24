@@ -1,11 +1,11 @@
-'''!    @file       motor_liberty_luna_monroe.py
+'''!    @file       motor_driver.py
         @brief      A driver for working with a DC motor.
         @details    Encapsulates functionality of DC motor in the form of a 
                     motor driver class. This class sets up pins to control the
                     motor and sets the duty cycle and direction of the motor. 
 
-        @author     Cade Liberty
         @author     Juan Luna
+        @author     Cade Liberty
         @author     Marcus Monroe
 
         @date       January 26, 2022
@@ -96,5 +96,5 @@ if __name__ == '__main__':
     
     # Test code
     while True:
-        motor_A.set_duty_cycle(int(input('Please, enter duty cycle for Motor A: ')))
-        motor_B.set_duty_cycle(int(input('Please, enter duty cycle for Motor B: ')))
+        motor_A.set_duty_cycle(int(input('Enter duty cycle for Motor A: ')))
+        motor_B.set_duty_cycle(int(input('Enter duty cycle for Motor B: ')))
