@@ -1,7 +1,6 @@
 # Start of user-defined ignore rules
 .vscode
 .gitignore
-.gitattributes
 # End of user-defined ignore rules     
 
 # Node artifact files
