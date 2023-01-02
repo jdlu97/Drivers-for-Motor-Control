@@ -5,10 +5,9 @@
                     motor and sets the duty cycle and direction of the motor. 
 
         @author     Juan Luna
-        @author     Cade Liberty
-        @author     Marcus Monroe
 
-        @date       January 26, 2022
+        @date       2022-01-26 Original file
+        @date       2022-12-30 Modified for portfolio update
 '''
 
 import pyb
