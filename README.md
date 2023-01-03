@@ -14,8 +14,10 @@
  The L6206 motor driver shield, a circuit board that can be attached atop the Nucleo, can be used to control two DC motors. It controls the torque produced by the motor and also its direction.
  
  An H-bridge motor driver has logic inputs to control which transistors in the bridge are turned on at any given time and to ensure that the two transistors in each half-bridge are never turned on at the same time, as this would short power to ground and let lots of smoke out. An excerpt from the L6206 motor driver IC’s datasheet is shown below:
- 
- ![H-Bridge-Logic](https://github.com/jdlu97/Drivers-for-Motor-Control/blob/main/img/h_bridge_logic.png?raw=true)
+
+  <p align="center">
+    <img src="https://github.com/jdlu97/Drivers-for-Motor-Control/blob/main/img/h_bridge_logic.png?raw=true" alt="H-Bridge-Logic"/>
+ </p>
 
  One of the chip’s two H-bridges consists of the four N-channel FET’s in the right half of the diagram, with the motor connected to pins OUT1A and OUT2A. The microcontroller controls pins ENA, IN1A, and IN2A. A common way of using these pins is to set ENA high to enable the motor, set IN1A low, and send a PWM signal to IN2A to power the motor in one direction; reverse the signals to IN1A and IN2A to power the motor in the other direction.
  
